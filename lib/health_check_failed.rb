@@ -1,0 +1,2 @@
+class HealthCheckFailed < Exception
+end

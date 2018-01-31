@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mongo:
+    image: mongo:3.3
+    ports:
+      - "27017:27017"
+      - "28017:28017"
+    volumes:
+      - /data/db:/data/db
+    networks:
+      - back
+    command: --smallfiles --rest
+networks:
+  back:
+    driver: bridge

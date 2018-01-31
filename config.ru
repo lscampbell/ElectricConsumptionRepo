@@ -1,0 +1,2 @@
+require_relative "./elec_hh_profile_repository"
+run ElecHHProfileRepository
